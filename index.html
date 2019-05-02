@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Convert InHome</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="top-text">
+        <div class="col-md-12 text-center animate fadeInDown">
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/package_1f4e6.png" class="main-emoji">
+          <h1 class="deliverymessage">You have a delivery from <strong>Ikea</strong>!</h1>
+        </div>
+      </div>
+      <div id="the-body">
+        <div class="row" id="cards">
+          <div class="col-md-12 text-center animate fadeInUp two">
+            <div id="back-card">
+              <p>Would you like to convert this delivery into an InHome Delivery no extra cost?</p>
+            </div>
+          </div>
+          <div class="col-md-12 animate fadeInUp one">
+            <div id="main-card">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col-xs-3">
+                    <img src="img/Ikea_square_large.png" class="rounded-circle" id="sender">
+                  </div>
+                  <div class="col-xs-9">
+                    <div><strong>INHOME</strong> DELIVERY</div>
+                    <div class="grey">Delivered by <strong>Bring</strong></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="group">
+                  <p>Sender:</p>
+                  <h6>Ikea AB</h6>
+                </div>
+                <div class="group">
+                  <p>Delivery Expected:</p>
+                  <h4 class="delivery-date">Friday, 23rd June</h4>
+                </div>
+                <div class="group">
+                  <p>Address:</p>
+                  <h6>Grev Turegatan 26, 114 38 Stockholm</h6>
+                </div>
+                <div class="group">
+                  <p>Please select lock: <span class="badge badge-pill badge-light" data-toggle="tooltip" data-placement="top" title="Which lock would you like to give Bring acess to?">?</span></p>
+                  <div class="form-group">
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option value="frontdoor123" selected>Front Door</option>
+                        <option value="backdoor456">Back Door</option>
+                        <option value="office789">Office</option>
+                      </select>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="control-buttons">
+          <div class="col-md-12 text-center">
+            <a href="success.html">            
+              <button class="btn btn btn-glue animate fadeInDown two" type="button">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Confirm InHome Delivery
+              </button>
+            </a>
+            <a href="reject.html"> 
+              <button class="btn btn-tert animate fadeInDown three">No thanks</button>
+            </a>
+          </div>
+        </div>
+        <div class="row" id="learn-more">
+          <div class="col-md-12 text-center">
+            <button class="btn btn-more animate fadeInUp four" type="button" data-toggle="modal" data-target="#learnMore">Learn More</button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="learnMore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h1>How does it work?</h1>
+                  <style>.gluehome{position:relative;width:100%;height:0;padding-bottom:56.27198%;margin-bottom:15px;}.gluehome iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
+                  </style>
+                  <div class="gluehome"><iframe width='500' height='294' src="https://www.youtube.com/embed/PN1xg0ZnBiI?&theme=dark&autoplay=1&keyboard=1&autohide=1&modestbranding=1&showinfo=0"frameborder="0"></iframe></div><div style='font-size: 0.8em'></div>
+                  <p>If you’re not in, your parcel will be delivered into your home by Bring at no extra cost.</p>
+                  <h3>Benefits</h3>
+                  <ul>
+                    <li>You don't need to be home.</li>
+                    <li>Secure one time access for Bring.</li>
+                    <li>There will be no delay to your delivery.</li>
+                    <li>Watch a video of your delivery.</li>
+                    <li>All deliveries are insured by LF.</li>
+                  </ul>
+                  <h3>Why am I seeing this?</h3>
+                  <ul>
+                    <li>You're expecting a parcel that's eligible for InHome Delivery.</li>
+                    <li>As you have a Glue lock, we can get this parcel delivered InHome for you at no extra cost.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end modal -->
+        </div> <!-- end learn-more -->
+      </div> <!-- end the-body -->
+    </div> <!-- end main container -->
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+/* ===== GLOBAL ===== */
+
+body {
+	background-color: #ffffff;
+	color: #2F3138;
+	font-family: 'Roboto', sans-serif;
+}
+p {
+	font-size: 14px;
+}
+.grey {
+	color: #979797;
+}
+.main-emoji {
+	width: 40px;
+	margin-bottom:10px;
+}
+
+/*BUTTONS*/
+.btn-glue {
+	background-color: #F3765D;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 50px;
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.12);
+	margin-bottom: 15px;
+}
+.btn-glue:hover {
+	width: 98%;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	-webkit-transition: 1s;
+	transition: 0.5s;
+	color: #f6f6f6;
+	background-color: #DF6C55;
+}
+.btn-tert {
+	background-color: transparent;
+	color: #2F3138;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 10px;
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.btn-more {
+	color: #ffffff;
+	background: rgba(151, 151, 151, 0.75);
+	backdrop-filter: blur(27.1828px);
+	border-radius: 25px;
+	padding:10px 20px;
+}
+
+/* FORMS */
+.form-group {
+    margin-bottom: 0rem !important;
+}
+
+/* TOP TEXT */
+#top-text {
+	margin-top: 50px;
+}
+.deliverymessage {
+	font-size: 20px;
+}
+
+/* CARDS */
+#the-body {
+	position: relative;
+    top: -35px;
+}
+#main-card {
+	border-radius: 15px;
+	box-shadow: 0px 15px 18px rgba(0, 0, 0, 0.15);
+}
+#back-card {
+	background-color: #97989B;
+	color: #ffffff;
+	border-radius: 15px;
+	position: relative;
+    top: 65px;
+}
+#back-card p {
+	padding: 15px 15px 60px 15px;
+	font-size: 16px;
+}
+.card-header {
+	background-color: #F6F6F5;
+	border-radius: 15px 15px 0 0 !important;
+}
+.card-header .col-xs-9 {
+	margin-left: 10px;
+}
+.card-header .col-xs-3 {
+	margin-left: 5px;
+}
+#sender {
+	width: 40px;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0px 0px 15px 15px;
+}
+.card-body p {
+    margin-bottom: 0px !important;
+    color: #979797;
+}
+.group {
+	margin-bottom: 10px;
+}
+.group:last-child {
+	margin-bottom: 0px;
+}
+.delivery-date {
+	font-weight: 700;
+}
+
+/* CONTROL BUTTONS */
+#control-buttons {
+	margin-top: 15px;
+}
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: .2em;
+    margin-right: 10px;
+}
+
+
+/* LEARN MORE */
+#learn-more {
+	margin-top: 30px;
+}
+
+
+/* SUCCESS MESSAGE */
+.checkmark-icon {
+	width: 80px;
+	margin-bottom: 30px;
+}
+#success-message {
+	margin-top: 50%;
+}
+#success-message h1 {
+	margin-bottom: 50px;
+	font-size: 23px;
+}
+
+/* MODAL */
+.modal-body h1 {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.modal-body ul {
+	margin-left: -18px !important;
+}
+.modal-body h3 {
+	font-weight: 700;
+}
+.modal-header {
+    border-bottom: 1px solid transparent;
+}
+
+
+/* ANIMATE */
+/*=== Trigger  ===*/
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+  
+/*=== Optional Delays, change values here  ===*/
+.one {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+
+.two {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.three {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay: 1.5s;
+animation-delay: 1.5s;
+}
+
+.four {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+animation-delay: 2s;
+}
+
+.five {
+-webkit-animation-delay: 4s;
+-moz-animation-delay: 4s;
+animation-delay: 3.5s;
+}
+
+
+/*=== Animations start here  ===*/
+
+/*==== FADE IN UP ===*/
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/*=== FADE IN DOWN ===*/
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+ }
+@-webkit-keyframes fadeInDown {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+}
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+} 
+
